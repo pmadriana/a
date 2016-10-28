@@ -3,7 +3,7 @@
 #include <iomanip>
 #include <list>
 using namespace std;
-/*
+
 main()
 {
     list <string> alumnos;
@@ -25,7 +25,5 @@ main()
         alumnos.pop_front();
         i++;
     }
-
-
 }
-*/
+
