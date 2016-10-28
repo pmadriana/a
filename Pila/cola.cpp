@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <queue>
-/*
+
 using namespace std;
 int main(){
 
@@ -18,4 +18,4 @@ int main(){
     }
     cout<<"El tamanio es: "<< a.size();
 }
-*/
+
