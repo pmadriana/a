@@ -68,5 +68,5 @@ void PointArray::clear()
 }
 void PointArray::getsize()
 {
-    cout<<"El tamańo es: "<< _size;
+    cout<<"El tamanio es: "<< _size;
 }
