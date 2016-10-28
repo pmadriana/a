@@ -10,13 +10,13 @@ main()
     alumnos.push_back("Juan");
     alumnos.push_back("Maria");
     alumnos.push_back("Camila");
-    alumnos.push_back("Jose");
+    alumnos.push_back("Martin");
     alumnos.push_back("Juan");
-    alumnos.push_back("Micaela");
+    alumnos.push_back("Milton");
     int i=1;
     cout<<"El tamanio de la lista es: "<<alumnos.size();
     cout<<"\n";
-    alumnos.remove("Micaela");
+    alumnos.remove("Milton");
     cout<<"El nuevo tamanio de  la lista es: "<<alumnos.size();
     cout<<"\n";
     cout<<"La lista es: ";
