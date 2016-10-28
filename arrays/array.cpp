@@ -21,10 +21,10 @@ PointArray::PointArray(){ //default
 PointArray::PointArray(const Punto pts, const int sz) //se crea el arreglo
 {
         _size=sz;
-        Point=new Point[sz];
+        pts=new Point[sz];
         int i;
         for(i=0; i<sz, i++){
-            points[i]=pts[i]
+            pts[i]=points[i]
         }
 }
 PointArray::PointArray(const PointArray &p) //arreglo copia
