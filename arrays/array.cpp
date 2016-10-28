@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void PointArray::resize(const int x);
+void PointArray::resize(const int x)
 {
     Punto *p= new Punto[x];
     this->_size=x;
@@ -30,7 +30,7 @@ PointArray::PointArray(const Punto pts, const int sz) //se crea el arreglo
 PointArray::PointArray(const PointArray &p) //arreglo copia
 {
     _size=p._size;
-    points=new Punto[size];
+    points=new Punto[_size];
     int i;
     for(i=0; i<_size; i++)
         points[i]=p.points[i];
@@ -45,7 +45,7 @@ void PointArray::print()
     for(i=0; i<_size; i++)
         points[i].print();
 }
-void PointArray:pushback(Punto &p) //insertar al final
+void PointArray::pushback(Punto &p) //insertar al final
 {
     resize(_size+1);
     points[_size-1]=p;
@@ -60,12 +60,13 @@ void PointArray::remove(int pos)
 void PointArray::clear()
 {
     Punto p(0,0);
+    int i;
     for(i=0; i< _size; i++)
     points[i]=p;
-    tam=0;
+    _size=0;
     delete[] points;
 }
-int PointArray::getsize()
+void PointArray::getsize()
 {
-    cout<<"El tamaño es: "<< _size;
+    cout<<"El tamaÅ„o es: "<< _size;
 }
