@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <stack>
-/*
+
 using namespace std;
 
 int main(){
@@ -21,4 +21,4 @@ int main(){
     cout<<"\nEl nuevo ultimo elemento es: "<<a.top();
 
 }
-*/
+
