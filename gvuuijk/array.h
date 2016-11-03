@@ -1,29 +1,25 @@
-#ifndef ARRAY_H
-#define ARRAY_H
-#include "Punto.h"
+#ifndef Punto_h
+#define Punto_h
 
 
 using namespace std;
+class Punto{
 
-class PointArray{
-private:
-    Punto *points;
-    int _size;
-    void resize(const int x);
+    int x;
+    int y;
 public:
-    PointArray();
-    PointArray(const Punto points[], const int size);
-    PointArray(const PointArray &pv);
-    ~PointArray();
+    Punto();
+    Punto(int , int );
+    Punto(Punto &o );
     void print();
-    void pushback(const Punto &p);
-    void insert(const int pos, const Punto &p);
-    void remove(const int pos);
-    const int getsize() const ;
-    void clear();
-    void  getsize();
+    int getx();
+    int gety();
+    int setx(int );
+    int sety(int );
+    void modifyPoint(int , int );
+//
+
 };
 
 
-
-#endif // ARRAY_H
+#endif // PUNTO_H
