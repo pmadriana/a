@@ -3,9 +3,9 @@
 using namespace std;
 
 Punto::Punto() : x(0), y(0){}
-Punto::Punto(int w, int z): x(w), y(z) {}
+Punto::Punto(int a, int b): x(a), y(b) {}
 
-Punto::Punto(Punto&o){
+Punto::Punto(Punto &o){
     x=o.x;
     y=o.y;
 }
@@ -18,13 +18,14 @@ int Punto::getx(){
 int Punto::gety(){
     return y;
 }
-int Punto::setx(int i){
-    x=i;
+int Punto::setx(int a){
+    x=a;
 }
-int Punto::sety(int i){
-    y=i;
+int Punto::sety(int b){
+    y=b;
 }
 void Punto::modifyPoint(int a, int b){
     x += a;
     y += b;
 }
+
