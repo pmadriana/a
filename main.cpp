@@ -1,5 +1,4 @@
 #include <iostream>
-https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/assignments/MIT6_096IAP11_sol03.pdf
 using namespace std;
 class Punto
 {
