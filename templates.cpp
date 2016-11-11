@@ -1,67 +1,29 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 template <typename T>
-class Stack
+T temp(T x, T y)
 {
-private:
-    vector <T> pila;
-public:
-    bool empty()
-    {
-        if (pila.empty()){
-            cout << "El stack esta vacio\n";
-            return true;}
-        else
-            cout << "El stack no esta vacio\n";
-            return false;
-    }
-    void push(const T &element)
-    {
-        cout << "Se inserto el elemento: "<< element << "\n";
-        pila.push_back(element);
-    }
-    T top()
-    {
-        cout << "El primer elemento es: ";
-        return pila.back();
-    }
-    void pop()
-    {
-        if(pila.empty())
-            cout<<"Esta vacio el stack";
-        else
-            pila.pop_back();
-    }
-};
-template <typename T>
-T Min(T a, T b)
-{
-    if(a>b)
-        return a;
+    if(x>y)
+        return x;
     else
-        return b;
+        return y;
 }
 template <typename T>
-T Min2(T a, T b)
+T templ(T x, T y)
 {
-    return (a>b)?a:b;
+    return (x>y)
+        
 }
 main()
 {
-    /*int x = Min(1,2);
-    int y = Min2(3,4);
-    cout << x << " " << y;*/
-    Stack <int> s;
-    s.empty();
-    s.push(1);
-    s.empty();
-    cout << s.top()<<"\n";
-    s.push(2);
-    s.push(3);
-    s.push(4);
-    cout << s.top()<<"\n";
-
+   int a=9; c;
+   int b=8;
+   c= temp(a,b)
+   int x= templ(1,6);
+   cout<<c;
+    
 
 }
 
